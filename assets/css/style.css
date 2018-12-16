@@ -1,0 +1,16 @@
+.myCountry {
+    margin:5px;
+    background: teal;
+    color: azure;
+}
+
+.countryGif {
+    border: 1px solid red;
+}
+
+.jumbotron {
+    background-image: url(../images/Mexico.png);
+    background-size: cover;
+    color: aliceblue;
+    text-align: right;
+}
