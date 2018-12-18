@@ -40,9 +40,10 @@ $(document).on("click", ".myCountry", function(){
   //We need a function that will fetch images from giphy when a button is clicked.
 
   var myCountry = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
   myCountry + "+vacation" + "&api_key=RJEqk2XbAKa7TkMXK1JMZr1NzQjBuSYc&limit=10&rating=g";
 
+  
   //make the API call using the dymanic URL created
   $.ajax({
     url: queryURL,
@@ -114,6 +115,7 @@ $("#find-country").on("click", function(event) {
         console.log(countryInput);
         topics.push(countryInput);
         renderBtns();
+        $("#country-input").val("");
 
 });
 
